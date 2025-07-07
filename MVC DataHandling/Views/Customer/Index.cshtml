@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Customer>
+<h2 style="color:white;background-color:forestgreen">Customer Details</h2>
+<table border="1" align="center" class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(C => C.CustId)</th>
+            <th>@Html.DisplayNameFor(C => C.Name)</th>
+            <th>@Html.DisplayNameFor(C => C.Balance)</th>
+            <th>@Html.DisplayNameFor(C => C.City)</th>
+            <th>@Html.DisplayNameFor(C => C.Status)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Customer customer in Model)
+        {
+            <tr>
+                <td align="center">@Html.DisplayFor(C => customer.CustId)</td>
+                <td>@Html.DisplayFor(C => customer.Name)</td>
+                <td>@Html.DisplayFor(C => customer.Balance)</td>
+                <td>@Html.DisplayFor(C => customer.City)</td>
+                <td align="center">@Html.DisplayFor(C => customer.Status)</td>
+                <td>
+                    <a asp-action="Get" asp-route-Custid="@customer.CustId">View</a> &nbsp;
+                    <a asp-action="Put" asp-route-Custid="@customer.CustId">Edit</a> &nbsp;
+                    <a asp-action="Delete" asp-route-Custid="@customer.CustId"
+                       onclick="return confirm('Are you sure of deleting the record?')">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tr><td colspan="6" align="center"><a asp-action="Post">Add New Customer</a></td></tr>
+</table>

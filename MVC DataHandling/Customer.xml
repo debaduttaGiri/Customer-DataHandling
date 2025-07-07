@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<Customers>
+  <Customer>
+    <CustId>1</CustId>
+    <Name>Devansh Rathore</Name>
+    <Balance>100000000000</Balance>
+    <City>Bangalore</City>
+    <Status>true</Status>
+  </Customer>
+  <Customer>
+    <CustId>2</CustId>
+    <Name>Smriti Saini</Name>
+    <Balance>200000000000</Balance>
+    <City>Delhi</City>
+    <Status>True</Status>
+  </Customer>
+</Customers>

@@ -1,0 +1,17 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Customer
+<h2 style="background-color:forestgreen;color:white">Customer Details</h2>
+<table border="1" align="center" class="table table-bordered table-striped">
+    <tr><td>Custid: </td><td>@Model.CustId</td></tr>
+    <tr><td>Name: </td><td>@Model.Name</td></tr>
+    <tr><td>Balance: </td><td>@Model.Balance</td></tr>
+    <tr><td>City: </td><td>@Model.City</td></tr>
+    <tr><td>Status: </td><td>@Model.Status</td></tr>
+</table>
+<div style="text-align:center">
+    <a asp-action="Index" align="center">Back to Customer Details</a>
+</div>

@@ -1,0 +1,35 @@
+﻿@model Customer
+<form asp-controller="Customer" asp-action="Post" method="post">
+    <div class="col-md-4">
+        <label asp-for="CustId" class="form-label"></label>
+            <br />
+            <input asp-for="CustId" class="form-control" />
+        </div>
+    <div class="col-md-4">
+        <label asp-for="Name" class="form-label"></label>
+            <br />
+        <input asp-for="Name" class="form-control" />
+        </div>
+    <div class="col-md-4">
+        <label asp-for="Balance" class="form-label"></label><br />
+        <input asp-for="Balance" class="form-control  />
+        </div>
+    <div class="col-md-4">
+        <label asp-for="City" class="form-label"></label><br />
+        <input asp-for="City" class="form-control  />
+        </div>
+    <div class="col-md-4">
+        <label asp-for="Status" class="form-label"></label><br />
+        <input asp-for="Status" class="form-check-input" />
+        </div>
+        <br />
+    <div class="col-md-4">
+        <input type="submit" value="Save" class="btn btn-primary" />
+        <input type="reset" value="Reset" class="btn btn-light" />
+        </div>
+    <br />
+    <div class="col-md-4">
+        <a asp-action="Index" align="center">Back to Customer Details</a>
+    </div>
+</form>
+
