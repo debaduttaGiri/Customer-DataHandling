@@ -53,6 +53,7 @@ namespace MVC_DataHandling
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}")
                 .WithStaticAssets();
+            app.MapControllers();
 
             app.Run();
         }
